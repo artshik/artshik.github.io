@@ -1,0 +1,83 @@
+---
+layout: gm
+---
+
+<div class="home">
+  <div class="full-hero hero-home">
+    <div class="hero-content">
+      <h1>GREY MATTER</h1>
+      <ul class="social-list">
+        {% include social-links.html %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="home-callout">
+    <h1 class="callout-title">The Grey Matter Story</h1>
+    <div class="callout-copy">
+      <p>
+        Grey Matter is a feed-based social plaform that connects users, artists, and streaming services in one single interface. It is a new musical ecosystem that is simple, elegant, media-rich, and based on human expression.
+      </p>
+    </div>
+  </div>
+
+  <div class="home-section">
+    <h4>Most recent post</h4>
+    <div class="blog-posts">
+      <header class="post-header">
+        <h2>
+          <a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a>
+        </h2>
+        <div class="post-byline">
+          <img src="{{ site.posts.first.gravatar }}">
+          <a href="{{ site.posts.first.authorTwitter }}" class="social-link">Tw</a>
+          by: {{ site.posts.first.author }}
+          <span> - {{ site.posts.first.date | date: '%B %d, %Y' }}</span>
+        </div>
+      </header>
+      <div class="posts-image" style="background-image:url({{ site.posts.first.postHero }})">
+      </div>
+      {{ site.posts.first.excerpt }}
+    </div>
+  </div>
+
+  <div class="home-section">
+    <h2>THE FOUNDERS</h2>
+    <p>
+      Grey Matter was founded by MacEagon Voyce, Sam Eckmeier, and Arthur Shikhman. We believe that creating direct lines of revenue from users to artists while giving users stake in the game and an outlet for creative expression can tap into the market overlap between the music industry and social media platforms.
+    </p>
+  </div>
+
+  <div class="bio-wrapper">
+    <div class="bio-box">
+      <img src="/images/keagonprofile.jpg">
+      <h3>MacEagon Voyce</h3>
+      <a href="http://twitter.com/" class="social-link">Tw</a>
+      <div class="bio-copy">
+        <p>
+          Keagon bio
+        </p>
+      </div>
+    </div>
+    <div class="bio-box">
+      <img src="/images/samprofile.jpg">
+      <h3>Sam Eckmeier</h3>
+      <a href="https://twitter.com/" class="social-link">Tw</a>
+      <div class="bio-copy">
+        <p>
+          Sam bio
+        </p>
+      </div>
+    </div>
+    <div class="bio-box">
+      <img src="/images/arthurprofile.jpg">
+      <h3>Arthur Shikhman</h3>
+      <a href="https://twitter.com/artwurk" class="social-link">Tw</a>
+      <div class="bio-copy">
+        <p>
+          Arthur bio
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
