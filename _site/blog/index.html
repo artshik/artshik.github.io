@@ -3,7 +3,7 @@
   <head>
   <title>Test Page: Don't Panic</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/main.css">
   <script async src="https://just-comments.com/w.js"></script>
@@ -14,9 +14,24 @@
   <nav>
     <ul class="header-nav nav-links">
       <li><a href="/">Home</a></li>
-<li><a href="/gallery">Gallery</a></li>
-<li><a href="/gmweb">Grey Matter</a></li>
-<li><a href="/blog">Blog</a></li>
+<li class="dropdown">
+  <a class="drop-trigger" href="#">Projects</a>
+  <ul class="drop-menu">
+    <li><a href="/gallery">Gallery</a></li>
+    <li><a href="/gmweb">Grey Matter</a></li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a class="drop-trigger" href="/blog">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+      <li><a href="/2019/05/20/post-title.html">First post test</a></li>
+    
+      <li><a href="/2016/11/04/second-post-title.html">Old template</a></li>
+    
+  </ul>
+</li>
 <li><a href="/2019/05/20/post-title.html">Newest Post</a></li>
 
     </ul>
@@ -91,9 +106,24 @@
   <nav>
     <ul class="footer-nav nav-links">
       <li><a href="/">Home</a></li>
-<li><a href="/gallery">Gallery</a></li>
-<li><a href="/gmweb">Grey Matter</a></li>
-<li><a href="/blog">Blog</a></li>
+<li class="dropdown">
+  <a class="drop-trigger" href="#">Projects</a>
+  <ul class="drop-menu">
+    <li><a href="/gallery">Gallery</a></li>
+    <li><a href="/gmweb">Grey Matter</a></li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a class="drop-trigger" href="/blog">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+      <li><a href="/2019/05/20/post-title.html">First post test</a></li>
+    
+      <li><a href="/2016/11/04/second-post-title.html">Old template</a></li>
+    
+  </ul>
+</li>
 <li><a href="/2019/05/20/post-title.html">Newest Post</a></li>
 
     </ul>
