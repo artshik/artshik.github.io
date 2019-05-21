@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="post">
+  <div class="half-hero" style="background-image:url({{ page.postHero }})">
+  </div>
+  <article class="page">
+    <header class="post-header">
+      <h2>{{ page.title }}</h2>
+      <div class="post-byline">
+        <img src="{{ page.gravatar }}">
+        <a href="{{ page.authorTwitter }}" class="social-link">Tw</a>
+        by: {{ page.author }}
+        <span> - {{ page.date | date: '%B %d, %Y' }}</span>
+      </div>
+    </header>
+    <aside class="post-aside">
+      {% include recent-posts.html %}
+    </aside>
+    <div class="post-content">
+      {{ content }}
+    </div>
+    <footer class="post-footer">
+      {{ page.postFooter }}
+    </footer>
+    <div class="just-comments" data-apikey="9475c722-3ac7-475b-806a-1dc8fbb3fe98">
+    </div>
+  </article>
+</div>
