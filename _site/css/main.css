@@ -85,7 +85,8 @@ h2 ~ p {
   color: #fff;
 }
 .nav-links a,
-.drop-trigger {
+.drop-trigger,
+.show-mobile-menu {
   font-size: 0.8rem;
   font-weight: bold;
   text-decoration: none;
@@ -127,6 +128,12 @@ h2 ~ p {
   color: #ccc;
 }
 
+/* MOBILE MENU */
+.mobile-menu-check,
+.show-mobile-menu {
+  display: none;
+}
+
 /* DROPDOWN STYLES */
 .dropdown {
   position: relative;
@@ -134,7 +141,7 @@ h2 ~ p {
 .dropdown:hover .drop-menu {
   display:block;
 }
-.dropdown-hover .drop-trigger:after {
+.dropdown:hover .drop-trigger:after {
   border-color: #ed6e2f transparent transparent;
 }
 .drop-trigger {
@@ -556,19 +563,69 @@ h2 ~ p {
 
   /* HEADER STYLES */
   .header-nav {
-    padding: 2vh 1em 0 0;
+    background-color: #444;
+    box-sizing: border-box;
+    left: 0;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: 10vh;
+    transition: all 0.5s ease-in-out;
+    width: 100vw;
+    z-index: 9;
   }
-  .header-nav > li {
-    margin-left: 0.25em;
+  .header-nav li {
+    display: block;
+    margin-top: 1em;
   }
-  .header-nav > li ~ li {
-    padding-left: 0.25em;
+  .header-nav li ~ li {
+    border: 0;
+    padding: 0;
+  }
+  .header-nav li:last-child {
+    margin-bottom: 1em;
+  }
+  .header-nav li:first-child a {
+    color: #fff;
+  }
+  .header-nav .dropdown:hover .drop-menu,
+  .header-nav .drop-trigger:after {
+    display: none;
+  }
+  .header-nav .drop-trigger {
+    padding-right: 0;
   }
   .nav-links a {
     font-size: 3.25vw;
   }
   .header-logo {
     left: auto;
+  }
+
+  /* MOBILE STYLES */
+  .show-mobile-menu {
+    display: block;
+    float: right;
+    font-weight: bold;
+    margin-top: 1.5vh;
+    padding: 1.5em;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .mobile-menu-check:checked ~ .header-nav {
+    max-height: 1000px;
+  }
+  .mobile-menu-check:checked ~ .show-mobile-menu:after {
+    background-color: #000;
+    color: #ed6e2f;
+    content: "CLOSE";
+    left: 0;
+    position: absolute;
+    top: 1.5em;
+    width: 100%;
+    text-align: center;
   }
 
   /* HOME STYLES */
