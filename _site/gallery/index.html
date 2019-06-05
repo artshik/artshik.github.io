@@ -10,6 +10,12 @@
   <link rel="stylesheet" href="/fonts/fontawesome-free-5.8.2-web/css/all.css">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/gallery.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      activateGallery();
+    });
+  </script>
   <script async src="https://just-comments.com/w.js"></script>
 </head>
 
@@ -51,20 +57,315 @@
       <div class="gallery col-three">
   <div class="col col-nav gallery-thumbs" id="gallery-thumbs">
     <div class="current">
-      <img src="/images/small/slide1.jpg" alt="Image title 1">
+      <img src="/images/italy/1.jpg" alt="florence1"
+        data-large-version="/images/italy/1.jpg"
+        data-title="Florence"
+        data-description="our lil studio in Florence">
     </div>
     <div>
-      <img src="/images/small/slide1.jpg" alt="Image title 2">
+      <img src="/images/italy/2.jpg" alt="florence2"
+        data-large-version="/images/italy/2.jpg"
+        data-title="Florence"
+        data-description="">
     </div>
+    <div>
+      <img src="/images/italy/3.jpg" alt="florence3"
+        data-large-version="/images/italy/3.jpg"
+        data-title="Florence"
+        data-description="arno river">
+    </div>
+    <div>
+      <img src="/images/italy/5.jpg" alt="florence5"
+        data-large-version="/images/italy/5.jpg"
+        data-title="Bologna"
+        data-description="">
+    </div>
+    <div>
+      <img src="/images/italy/6.jpg" alt="florence6"
+        data-large-version="/images/italy/6.jpg"
+        data-title="Bologna"
+        data-description="">
+    </div>
+<!---    <div>
+      <img src="/images/italy/7.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/8.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/9.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/10.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/11.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/12.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/13.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/14.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/15.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/16.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/17.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/18.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/19.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/20.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/21.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/22.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/23.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/24.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/25.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/26.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/27.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/28.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/29.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/30.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/31.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/32.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/33.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/34.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/35.jpg" alt="florence1"
+        data-title="Florence"
+        data-description="little studio home base in Florence">
+    </div>
+    <div>
+      <img src="/images/italy/36.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/37.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/38.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/39.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/40.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/41.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/42.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/43.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/44.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/45.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/46.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/47.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/48.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/49.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/50.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/51.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/52.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/53.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/54.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/55.mp4" alt="florence55"
+        data-large-version="/images/italy/55.mp4"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/56.mp4" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/57.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/58.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/59.jpg" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div>
+    <div>
+      <img src="/images/italy/60.mp4" alt="florence2"
+        data-title="Florence"
+        data-description="studio lounging">
+    </div> -->
   </div>
   <div class="col col-content">
     <div class="gallery-photo" id="gallery-photo">
-      <img src="/images/large/slide1.jpg" alt="Image title 1">
+      <img src="/images/italy/1.jpg" alt="florence1">
     </div>
   </div>
   <div class="col col-aside gallery-info" id="gallery-info">
-    <h3>Image Title 1</h3>
-    <p>Image description 1</p>
+    <h3 class="title">Florence</h3>
+    <p class="description">our lil studio in Florence</p>
   </div>
 </div>
 
